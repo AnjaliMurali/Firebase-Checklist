@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+        <html lang="en">
+            <head>
+                
+                <title>Document</title>
+                 <!-- Use firebase app and database. -->
+
+                 <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+                 <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-database.js"></script>
+
+                 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+                 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+                 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+                 <script src="main.js"> </script>
+            </head>
+            <body>
+                <center>
+            <h1> Check List </h1>
+            
+            <div>
+                <label>Enter Item:</label>
+                <input type="text" id="msg" placeholder="enter Item">
+            </div>
+            <br>
+            
+
+        <button  class="btn btn-success" onclick="addItem() ">Add</button>
+                       
+        
+                       
+            <button  class="btn btn-danger" onclick="del()">Delete</button>
+            
+
+            <br>
+            <h3 style="background:black; width:25%; color: white;">My CheckList</h3>
+            <br>
+            <div id="output"></div>
+        </center>
+      
+            </body>
+        </html>
